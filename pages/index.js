@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/Link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Link href="/random">random 1</Link>
+        <Link href="/foo/random">random 1</Link>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
